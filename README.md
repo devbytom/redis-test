@@ -7,7 +7,7 @@ ssh -L 6379:INSTANCE.ruxlad.0001.sae1.cache.amazonaws.com:6379 -i ~/w/infrastruc
 
 Edit the following [index](https://github.com/devbytom/redis-test/blob/888dde7a9a4fe5525a86ad11667f0a39a325d54f/main.go#L27) parameter to some wishful value
 ```
-val, err := rdb.Keys(ctx, "dex_descomplica_auth_*").Result()
+val, err := rdb.Keys(ctx, "*").Result()
 ```
 
 ## Run
