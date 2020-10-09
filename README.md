@@ -1,6 +1,6 @@
 ## SSH tunnel
 ```bash
-ssh -L 6379:INSTANCE_HOST:6379 -i ~/w/infrastructure/terraform/global/credentials/redis-bastion.pem ubuntu@BASTIONIP
+ssh -L 6379:INSTANCE_HOST:6379 -i ~/.ssh/BASTION.pem ubuntu@BASTIONIP
 ```
 
 ## Find
