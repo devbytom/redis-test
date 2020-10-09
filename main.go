@@ -11,11 +11,9 @@ var ctx = context.Background()
 
 func main() {
 	rdb := redis.NewClient(&redis.Options{
-		Addr: "localhost:6379",
-		// Addr:     "dex-production.ruxlad.0001.sae1.cache.amazonaws.com:6379",
-		// Addr:     "18.230.22.135:6379",
-		Password: "", // no password set
-		DB:       0,  // use default DB
+		Addr:     "localhost:6379",
+		Password: "",
+		DB:       0,
 	})
 	// err := rdb.Set(ctx, "key", "value", 0).Err()
 	// if err != nil {
