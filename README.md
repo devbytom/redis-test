@@ -1,6 +1,6 @@
 ## SSH tunnel
 ```bash
-ssh -L 6379:INSTANCE.ruxlad.0001.sae1.cache.amazonaws.com:6379 -i ~/w/infrastructure/terraform/global/credentials/redis-bastion.pem ubuntu@18.230.22.135
+ssh -L 6379:INSTANCE_HOST:6379 -i ~/w/infrastructure/terraform/global/credentials/redis-bastion.pem ubuntu@BASTIONIP
 ```
 
 ## Find
